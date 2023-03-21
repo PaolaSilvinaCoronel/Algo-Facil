@@ -22,9 +22,8 @@ function App() {
     <div className="App">
      <section className='App-content'> 
      {
-      gifs.map(singleGif => <img src={singleGif}/>)
+      gifs.map(singleGif => <img style={{width:"140px",height:"140px"}} src={singleGif}/>)
      }
-     <button onClick= {()=> setGifs(DIFERENTE_GIFS)}>Cambiar el gifs</button>
      </section>
     </div>
   );
